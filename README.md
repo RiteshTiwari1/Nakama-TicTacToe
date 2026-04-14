@@ -2,12 +2,6 @@
 
 A production-style multiplayer Tic-Tac-Toe web app built with a server-authoritative Nakama backend. The React client only sends move intents; Nakama owns the board, turn order, winner detection, timer enforcement, room lifecycle, and leaderboard updates.
 
-## Live Deliverables
-
-- Frontend URL: add the deployed Vercel/Netlify/GitHub Pages link here
-- Nakama endpoint: add the deployed Nakama server URL here
-- Source repo: `https://github.com/RiteshTiwari1/Nakama-TicTacToe`
-
 ## Tech Stack
 
 - React 19 + Vite + Tailwind CSS for the responsive web client
@@ -114,6 +108,8 @@ Use `VITE_NAKAMA_USE_SSL=true` and port `443` if Nakama is behind HTTPS / a reve
 7. Play a timed match and wait 30 seconds without moving to verify server-side timeout forfeit.
 
 ## Deployment Notes
+
+Source repository: `https://github.com/RiteshTiwari1/Nakama-TicTacToe`
 
 Frontend:
 
