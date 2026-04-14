@@ -1,4 +1,4 @@
-# Gridlock Arena - Nakama Multiplayer Tic-Tac-Toe
+# Nakama Tic-Tac-Toe
 
 A production-style multiplayer Tic-Tac-Toe web app built with a server-authoritative Nakama backend. The React client only sends move intents; Nakama owns the board, turn order, winner detection, timer enforcement, room lifecycle, and leaderboard updates.
 
@@ -6,7 +6,7 @@ A production-style multiplayer Tic-Tac-Toe web app built with a server-authorita
 
 - Frontend URL: add the deployed Vercel/Netlify/GitHub Pages link here
 - Nakama endpoint: add the deployed Nakama server URL here
-- Source repo: `https://github.com/RiteshTiwari1/TicTac-Arena`
+- Source repo: `https://github.com/RiteshTiwari1/Nakama-TicTacToe`
 
 ## Tech Stack
 
@@ -69,8 +69,8 @@ React Client
 ## Local Setup
 
 ```bash
-git clone https://github.com/RiteshTiwari1/TicTac-Arena.git
-cd TicTac-Arena
+git clone https://github.com/RiteshTiwari1/Nakama-TicTacToe.git
+cd Nakama-TicTacToe
 
 cd server
 npm install
