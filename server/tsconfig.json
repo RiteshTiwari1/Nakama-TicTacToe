@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "strict": true,
+    "esModuleInterop": true,
+    "outFile": "./build/index.js",
+    "typeRoots": ["./node_modules"],
+    "skipLibCheck": true,
+    "lib": ["es5", "es2015.iterable"]
+  },
+  "files": [
+    "./src/constants.ts",
+    "./src/types.ts",
+    "./src/utils.ts",
+    "./src/leaderboard.ts",
+    "./src/match_handler.ts",
+    "./src/match_rpc.ts",
+    "./src/main.ts"
+  ]
+}

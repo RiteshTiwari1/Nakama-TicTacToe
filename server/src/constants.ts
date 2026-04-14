@@ -1,0 +1,16 @@
+const TICK_RATE = 5;
+const TURN_TIMEOUT_SEC = 30;
+const TURN_TIMEOUT_TICKS = TURN_TIMEOUT_SEC * TICK_RATE;
+const GAME_OVER_DELAY_TICKS = 5 * TICK_RATE;
+const LEADERBOARD_ID = "global_leaderboard";
+
+const OpCode = {
+  MOVE: 1,
+  STATE_UPDATE: 2,
+  GAME_OVER: 3,
+  TIMER_SYNC: 4,
+  REJECTED: 5,
+};
+
+const WIN_SCORE = 200;
+const DRAW_SCORE = 50;

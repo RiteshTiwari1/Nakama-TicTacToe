@@ -1,0 +1,13 @@
+{
+  "name": "tictac-arena-server",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "nakama-common": "https://github.com/heroiclabs/nakama-common"
+  }
+}

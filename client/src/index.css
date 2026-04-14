@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(251, 146, 60, 0.22), transparent 28rem),
+    radial-gradient(circle at 85% 12%, rgba(190, 242, 100, 0.16), transparent 24rem),
+    linear-gradient(135deg, #17120d 0%, #0d0f0b 48%, #11100b 100%);
+  color: white;
+  font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, black, transparent 82%);
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-pop {
+  animation: pop 0.25s ease-out;
+}

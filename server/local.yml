@@ -1,0 +1,17 @@
+name: tictac-arena
+data_dir: "./data/"
+
+runtime:
+  js_entrypoint: "index.js"
+
+match:
+  input_queue_size: 128
+  call_queue_size: 128
+  deferred_queue_size: 128
+
+logger:
+  level: "DEBUG"
+
+console:
+  username: "admin"
+  password: "password"
