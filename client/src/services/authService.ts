@@ -27,9 +27,14 @@ export async function signup(email: string, password: string, displayName: strin
     // Don't pass username — let Nakama auto-generate one
     // Email is the unique identifier, displayName is just for show
     session = await client.authenticateEmail(email, password, true);
-  } catch {
-    // Any error during signup with existing email
-    throw new Error("EMAIL_EXISTS:An account with this email already exists. Try logging in.");
+  } catch (e) {
+    const text = extractErrorText(e).toLowerCase();
+
+    if (text.includes("already exists") || text.includes("already in use")) {
+      throw new Error("EMAIL_EXISTS:An account with this email already exists. Try logging in.");
+    }
+
+    throw new Error(`Signup failed: ${extractErrorText(e) || "Unable to reach Nakama server"}`);
   }
 
   // If session was not newly created, this email already had an account
